@@ -21,8 +21,4 @@ WHERE C.ClassName = 'A1';
 
 SELECT S.StudentId, S.StudentName, Sub.SubName, M.Mark
 FROM Student S join Mark M on S.StudentId = M.StudentId join Subject Sub on M.SubId = Sub.SubId
--- Sử dụng câu lệnh Where để hiển thị điểm môn CF của các học viên
-
-SELECT S.StudentId, S.StudentName, Sub.SubName, M.Mark
-FROM Student S join Mark M on S.StudentId = M.StudentId join Subject Sub on M.SubId = Sub.SubId
 WHERE Sub.SubName = 'CF';
